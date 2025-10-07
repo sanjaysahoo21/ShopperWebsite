@@ -1,0 +1,115 @@
+.cartitems {
+    margin: 10rem 17rem;
+}
+.cartitems hr{
+    height: 3px;
+    background: #e2e2e2;
+    border: none;
+}
+/* Header row */
+.cartitems-format-main {
+    display: grid;
+    grid-template-columns: 0.8fr 2fr 1fr 1fr 1fr 0.6fr; /* Products, Title, Price, Quantity, Total, Remove */
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    color: #454545;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+/* Item rows */
+.cartitems-format {
+    display: grid;
+    grid-template-columns: 0.8fr 2fr 1fr 1fr 1fr 0.6fr;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.carticon-product-icon {
+    height: 6.2rem;
+}
+.cartitems-remove-icon {
+    width: 1.5rem;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.cartitems-quantity {
+    width: 6.4rem;
+    height: 5rem;
+    border: 2px solid #ebebeb;
+    background: #fff;
+}
+.cartitems-down {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin: 10rem 0;
+}
+.cartitems-total {
+    flex: 1 1 32rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    gap: 2rem;
+}
+.cartitems-total-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+.cartitems-total button {
+    width: 26.2rem;
+    height: 5.8rem;
+    outline: none;
+    border: none;
+    background: #ff5a5a;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.cartitems-promocode {
+    flex: 1 1 32rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.cartitems-promocode p{
+    color: #555;
+}
+.cartitems-promobox {
+    width: 100%;
+    max-width: 50rem;
+    margin-top: 1.5rem;
+    padding: 0 0 0 2rem;
+    height: 5.8rem;
+    background: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.cartitems-promobox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.6rem;
+    width: 100%;
+    height: 5rem;
+}
+.cartitems-promobox button {
+    width: 17rem;
+    height: 5.8rem;
+    font-size: 1.6rem;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+/* Optional: retain support for any accidental camelCase classes in JSX */
+.cartItems,
+.cartItems hr,
+.cartItems-format-main,
+.cartItems-format {
+    /* These selectors are intentionally left without overrides to avoid duplication.
+       Main styles are now under lowercase class names used in JSX. */
+}
